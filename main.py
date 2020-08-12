@@ -27,7 +27,7 @@ def form():
 	<input type="submit" name="Submit" />
 	</form>
 	'''
-@app.route('/predict', methods = ['POST'])
+@app.route('/predict', methods = ['GET','POST'])
 def predict():
     meterread = request.form.get("meterread")
     FT_IR_Water = request.form.get("FT_IR_Water")
